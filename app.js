@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 
 // set the port, express uses to serve the application.
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5500;
 
 const app = express();
 
@@ -12,14 +12,11 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', require('./routes/index'));
-
 app.use((req, res, next) => {
     var err = new Error('not found');
     err.status = 404;
-    err.customMessage = "something terribe has happened! your page is missing:("
-
+    err.customMessage = "Something terribe has happened! your page is missing:("
     next(err);
-
 })
 
 app.use((err, req, res, next) => {
