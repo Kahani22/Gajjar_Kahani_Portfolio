@@ -1,0 +1,243 @@
+#about{
+  .aboutCon{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    #kahaniImg{
+      display: none;
+      }
+    #aboutText  {
+      .bigText{
+          font-size: 20px;
+      }
+      p {
+          font-size: 12px;
+          color: white;
+          line-height: 18px;
+      }
+      h1{
+        font-size: 28px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        // margin: 0px;
+      } 
+    }
+  }
+  
+      
+  .skills{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    .softSkills, .softwareSkills{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .bars{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 5px;
+        color: white;
+        .container{
+          background-color: white;
+          width: 100%;
+          height: 10px;
+          
+        .bar100{
+          width: 100%;
+          background-color: $yellow;
+          height: 10px;
+        }
+
+        .bar95{
+          width: 95%;
+          background-color: $yellow;
+          height: 10px;
+        }
+        .bar90{
+          width: 90%;
+          background-color: $yellow;
+          height: 10px;
+        }
+
+        .bar85{
+          width: 85%;
+          background-color: $yellow;
+          height: 10px;
+        }
+
+        .bar80{
+          width: 80%;
+          background-color: $yellow;
+          height: 10px;
+        }
+        
+      
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #about{
+    margin-top: 10%;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    .aboutCon{
+      flex-direction: row;
+      position: relative;
+      #kahaniImg{
+        display: block;
+        position: absolute;
+        width: 270px;
+      }
+      #aboutText  {
+        margin-left: 40%;
+        z-index: 3;
+        margin-bottom: 60px;
+        .bigText{
+        font-size: 22px;
+        }
+        h1{
+          font-size: 28px;
+          margin-left: 20px;
+          padding-bottom: 30px;
+          padding-top: 30px;
+          } 
+        p {
+          font-size: 16px;
+          line-height: 22px;
+        }
+       }
+      }
+
+    .skills{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .softSkills, .softwareSkills{
+        width:46%;
+        h2 {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        .bars{
+          justify-content: space-between;
+          flex-direction: row;
+          font-size: 13px;
+          margin-bottom: 8px;
+          .container{
+            width: 60%;
+            height: 7px;
+            margin-top: 3px;
+            .bar100{
+              height: 7px;
+            }
+            .bar95{
+              height: 7px;
+            }
+            .bar90{
+              height: 7px;
+            }
+            .bar85{
+              height: 7px;
+            }
+            .bar80{
+              height: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+  
+
+@media screen and (min-width: 1200px) {
+
+  #about {
+  
+    .aboutCon{
+    display: flex;
+    flex-direction: column;   
+    #aboutText  {
+    .bigText{
+     font-size: 26px;
+   }
+   h1{
+    font-size: 40px;
+    margin-left: 100px;
+    color: $yellow;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    }   
+    p{
+    font-size: 20px;
+      
+    }
+  }
+    #kahaniImg{
+      display: block;
+      position: absolute;
+      width: 400px;
+    }
+  }
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .softSkills, .softwareSkills{
+    width:46%;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .bars{
+      justify-content: space-between;
+      flex-direction: row;
+      font-size: 16px;
+      margin-bottom: 8px;
+      // margin-left: 0px;
+      .container{
+        width: 70%;
+        height: 10px;
+        margin-top: 3px;
+        .bar100{
+          height: 10px;
+        }
+        .bar95{
+          height: 10px;
+        }
+        .bar90{
+          height: 10px;
+        }
+        .bar85{
+          height: 10px;
+        }
+        .bar80{
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+}
+}

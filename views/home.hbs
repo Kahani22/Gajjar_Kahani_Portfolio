@@ -1,35 +1,238 @@
+<div id="container1">
+    <section id="home">
+      <video autoplay muted loop controls id="video">
+                <source src="video/demoreel.mp4" type="video/mp4">
+                <source src="video/demoreel.ogg" type="video/ogg">
+                <source src="video/demoreel.mp4" type="video/webm">
+                  Sorry, your browser doesn't support embedded videos:(
+        </video>
+    </section>
 
-{{!-- <section id="section2" class="panel">panel 2</section> --}}
-<section id="section3" class="panel">
-    <h1 class="user-panel-heading">
-        Welcome to my movie world!
-    </h1>
+    <section id="about">
+      
+            <div class="aboutCon">
+              <img src="images/about_hover.jpg" alt="Kahani" id="kahaniImg">
+              
+                <div id="aboutText">  
+                  <h1>Designer's Rundown</h1>
+                    <p>
+                      <span class="bigText">Design enthusiast</span> with strong observation skills who believes in designing spaces through an understanding of humans use of space.<br>
 
-    <h3>Click on the movie name to know more.</h3>
+                      “Thousand of experiences teach us, that space communicates” - E.T.Hall. <br>
 
-    <div class="team">
-        <!-- loop through all our team members and put their info on the page -->
-        {{#each movie}} {{!-- this is like a JS forEach loop --}}
-        <div class="user-panel">
-            <img class="m-image" src="images/{{image}}" alt="movie image">
-            <a href="{{ID}}" class="u-link">
-                Movie Info
-            </a>
-            <h1>{{Name}}</h1>
-        </div>
-        {{/each}}
-    </div>
+                      Having researched in Urban Interiors I strongly believe there is no boundary between <span class="bigText">space design</span> and <span class="bigText">virtual design.</span> When merged it can create futuristic spaces. Through Interactive media design, I would like to explore various ways of making <span class="bigText">user friendly</span> designs from user’s perspective.
+                    </p>
+                </div>
+            </div>
+          
 
-    <!-- this will be filled in on the client side when we render our AJAX data -->
-    <section class="lightbox">
-        <span class="close">x</span>
-        <div class="sidebar">
-            <img src="" alt="larger bio image">
-        </div>
+      <div class="skills">
+            <div class="softSkills">
+              <h2>Soft Skills</h2>
+                  
+                  <div class="bars">
+                      <p>Communication</p>   
+                      <div class="container">
+                      <div class="bar100"></div>
+                      </div>
+                  </div>
 
-        <div class="lb-content">
-            {{!-- render the database content here --}}
-        
+                  <div class="bars">
+                      <p>Creativity</p>   
+                      <div class="container">
+                      <div class="bar95"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>Team Work</p>   
+                      <div class="container">
+                      <div class="bar85"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>Organization</p>   
+                      <div class="container">
+                      <div class="bar90"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>Photography</p>   
+                      <div class="container">
+                      <div class="bar95"></div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="softwareSkills">
+              <h2>Software Skills</h2>
+             
+                  <div class="bars">
+                      <p>Adobe Suite</p>   
+                      <div class="container">
+                      <div class="bar95"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>Cinema4D</p>   
+                      <div class="container">
+                      <div class="bar85"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>HTML5</p>   
+                      <div class="container">
+                      <div class="bar95"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>SCSS</p>   
+                      <div class="container">
+                      <div class="bar90"></div>
+                      </div>
+                  </div>
+
+                  <div class="bars">
+                      <p>Javascript</p>   
+                      <div class="container">
+                      <div class="bar85"></div>
+                      </div>
+                  </div>
+
+              
+            </div>
+
+      </div>
+    </section>
+
+    <section id="work">
+      <h1>Design Development</h1>
+        <div class="workContainer">
+          <div class="Left">
+            <h3>Organ Regeneration</h3>       
+            <div class="flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <a href="/#home">
+                 <img src="images/p1.jpg" alt="thesis analysis" id="slide1">
+                 </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="Right"> 
+            <h3>Thermo Security</h3>
+             <div class="flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                <a href="/#home">
+                  <img src="images/p2.jpg" alt="thesis analysis" id="slide1">
+                </a>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="Left">
+            <h3>Imagina</h3>
+             <div class="flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <a href="/#home">
+                <img src="images/p3.jpg" alt="thesis analysis" id="slide1">
+                </a>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="Right">
+            <h3>Corporate Design</h3>
+            <div class="flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <a href="/#home">
+                  <img src="images/p4.jpg" alt="thesis analysis" id="slide1">
+                  </a>
+               </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
         </div>
     </section>
-</section>
+      
+</div> 
+{{!-- container1 --}}
+
+<div id="container2"> 
+    <div id="imageSlider">
+      {{!-- <img src="images/slide_1.jpg" alt="thesis analysis" id="slide1">
+      <img src="images/slide_2.jpg" alt="thesis analysis" id="slide2">
+      <img src="images/slide_3.jpg" alt="thesis analysis" id="slide3">
+     --}}
+
+    {{!-- <div class="w3-content w3-section" style="max-width:500px"> --}}
+  <img class="slide" src="images/slide_1.jpg" alt="unfolding of street vendors">
+  <img class="slide" src="images/slide_2.jpg" alt="street analysis">
+  <img class="slide" src="images/slide_3.jpg" alt="transformation of spaces">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+    <section id="contact">
+      <div id="contactbox"> 
+        <h1>Let's Collaborate</h1>
+          <div id="form">
+            <form class="cols" id="contactForm" action="form.php" method="POST">
+                <div class= "rows">
+                  <label for="name">My name is</label>
+                  <input class="inputField" type="text" required id="name" name="fullName" placeholder="...">
+                </div>
+                <div class="rows">
+                  <label for="choose">And I'd like to </label>
+                  <select id="choose">
+                    <option value="Get a quote">Get a quote</option>
+                    <option value="Partner with IMAGINA">Collaborate</option>
+                    <option value="Give feedback">Give feedback</option>
+                    <option value="Get a job">Just get in touch</option>
+                  </select>
+                </div>
+                <div class="rows">
+                  <label for="email">My email is</label>
+                  <input class="inputField" type="text" required id="email" name="email" placeholder="...">
+                </div>
+                <label for="comments">Here are some details...</label>
+                <textarea id="comments" name="comments" required placeholder="Your message here..."></textarea>
+                <input type="submit" id="submit" value="SUBMIT">
+				    </form>
+          </div>
+      </div>
+    </section>
+
+
+</div>
+
+
