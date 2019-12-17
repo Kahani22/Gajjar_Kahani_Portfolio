@@ -118,7 +118,7 @@
             <div class="flip-card">
              <div class="flip-card-inner">
                <div class="flip-card-front">
-                 <a href="/#home">
+                 <a href="1">
                  <img src="images/p1.jpg" alt="thesis analysis" id="slide1">
                  </a>
                 </div>
@@ -131,7 +131,7 @@
              <div class="flip-card">
              <div class="flip-card-inner">
                <div class="flip-card-front">
-                <a href="/#home">
+                <a href="2">
                   <img src="images/p2.jpg" alt="thesis analysis" id="slide1">
                 </a>
                 </div>
@@ -144,7 +144,7 @@
              <div class="flip-card">
              <div class="flip-card-inner">
                <div class="flip-card-front">
-                 <a href="/#home">
+                 <a href="3">
                 <img src="images/p3.jpg" alt="thesis analysis" id="slide1">
                 </a>
                 </div>
@@ -157,7 +157,7 @@
             <div class="flip-card">
              <div class="flip-card-inner">
                <div class="flip-card-front">
-                 <a href="/#home">
+                 <a href="4">
                   <img src="images/p4.jpg" alt="thesis analysis" id="slide1">
                   </a>
                </div>
@@ -174,36 +174,13 @@
 
 <div id="container2"> 
     <div id="imageSlider">
-      {{!-- <img src="images/slide_1.jpg" alt="thesis analysis" id="slide1">
-      <img src="images/slide_2.jpg" alt="thesis analysis" id="slide2">
-      <img src="images/slide_3.jpg" alt="thesis analysis" id="slide3">
-     --}}
-
-    {{!-- <div class="w3-content w3-section" style="max-width:500px"> --}}
   <img class="slide" src="images/slide_1.jpg" alt="unfolding of street vendors">
   <img class="slide" src="images/slide_2.jpg" alt="street analysis">
   <img class="slide" src="images/slide_3.jpg" alt="transformation of spaces">
 </div>
 
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); 
-}
-</script>
 
     <section id="contact">
-      <div id="contactbox"> 
         <h1>Let's Collaborate</h1>
           <div id="form">
             <form class="cols" id="contactForm" action="form.php" method="POST">
@@ -229,7 +206,6 @@ function carousel() {
                 <input type="submit" id="submit" value="SUBMIT">
 				    </form>
           </div>
-      </div>
     </section>
 
 

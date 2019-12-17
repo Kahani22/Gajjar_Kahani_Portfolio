@@ -1,0 +1,40 @@
+{{#each data}}
+    
+    <img class="heroImage" src="images/{{hero_img}}" alt="project hero image">
+    <div id="container">
+    <section id="content">
+        <div id="sliderPort">
+            <img class="slide" src="images/{{slide_1}}" alt="organ regeneration badges">
+            <img class="slide" src="images/{{slide_2}}"alt="oragn regeneration gift bag">
+            <img class="slide" src="images/{{slide_3}}"alt="oragn regeneration bus stop poster">
+        </div>
+        <div id="titles">
+            <div>
+                <div id="titleBox"></div>
+                <h1>{{title}}</h1>
+                <div id="tags">
+                    <div id="year">
+                        <h2>Year</h2>
+                        <p>{{year}}</p>
+                    </div>
+                    <div id="role">
+                        <h2>Role</h2>
+                        <p>{{role}}</p>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
+                <p>{{skills}}</p>
+            </div>
+        </section>
+    <section id="info">
+        <p>{{body}}</p> 
+        <img class="mid" src="images/{{mid_1}}" alt="magazine pages">
+    </section>
+    </div>
+    <div id="botImg">
+         <img class="last" src="images/{{wireframe}}" alt="brochure">
+    </div>
+
+{{/each}}

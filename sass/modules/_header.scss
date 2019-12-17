@@ -11,7 +11,7 @@
         border-left: $green 2px solid;
         transition: all 1s ease;
         padding-left: 10px;
-        color: white;
+        color: $green;
         font-size: 8px;
         line-height: 10px;
     }
@@ -26,13 +26,12 @@
     z-index: 99;
     top:20px;
     left:5px;
-    width: 20%;
-    a {
-        width: 100%;
+    width: 15%;
+    #logoK{
+        display: flex;
+        width: 65%;
         height: 77px;
-        #logo{
-            width:100%;
-        }
+        margin-left: 2px;
     }
 }
 
@@ -49,18 +48,17 @@
     #mainLogo{
         top:20px;
         left:10px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
-    #logo{
-        // width: 80px;
-    }
     #mainNav {
         
         top: 40px;
         right: 20px;
         ul li a{
             padding-bottom: 8px;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 25px;
         }
         li:hover a {
@@ -71,13 +69,12 @@
 
 @media screen and (min-width: 1200px) {
     #mainLogo{
-        top:20px;
-        left:20px;
+        top: 20px;
+        left: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
-    #logo{
-        // width: 100px;
-    } 
 
     #mainNav {
         
@@ -85,7 +82,7 @@
         right: 35px;
         ul li a {
             padding-bottom: 8px;
-            font-size: 18px;
+            font-size: 19px;
             line-height: 35px;
         }
         li:hover a {

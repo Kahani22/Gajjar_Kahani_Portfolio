@@ -1,78 +1,63 @@
-.nav-item{
+#footerImg {
+    width: 100%;
+}
+#footer {
+    text-align: center;
     color: white;
-    font-size: 10px;
-    padding-left: 40px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        &:hover{
+            color: $yellow;
+            transition: all 1s ease;
+            font-size: 15px;
+        }
+    }
+    .footersocial {
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    p {
+        font-size: 13px;
+    }
 }
 
-#copyright{
-    font-size: 10px;
-    padding-left: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-
-}
-a:hover{
-    color: $yellow;
-    transition: all 1s ease;
-    font-size: 15px;
-}
 
 @media screen and (min-width: 768px) {
-
-.nav-item{
-    color: white;
-    font-size: 18px;
-    padding-left: 130px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#copyright{
-    font-size: 15px;
-    padding-left: 210px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-
-}
-a:hover{
-    color: $yellow;
-    transition: all 1s ease;
-    font-size: 20px;
-}
+    #footer {
+        display: flex;
+        flex-direction: row;
+        a {
+            font-size: 18px;
+            &:hover{
+                font-size: 22px;
+            }
+        }
+        .footersocial {
+            width: 50%;
+        }
+        p {
+            font-size: 18px;
+            width: 50%;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
-    .nav-item{
-        color: white;
-        font-size: 19px;
-        padding-left: 140px;
-        // padding-top: 20px;
-        margin-right: auto;
-        margin-left: auto;
+    #footer {
+        margin-bottom: 3%;
+        a {
+            font-size: 20px;
+            &:hover{
+                font-size: 25px;
+            }
+        }
+        p {
+            font-size: 20px;
+        }
     }
-    
-    #copyright{
-        font-size: 18px;
-        padding-left: 800px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: white;
-    
-    }
-    a:hover{
-        color: $yellow;
-        transition: all 1s ease;
-        font-size: 23px;
-    }
-    }
+}

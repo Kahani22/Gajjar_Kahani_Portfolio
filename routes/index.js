@@ -1,61 +1,114 @@
 const express = require('express');
 const router = express.Router();
 
-const sql = require('../utils/sql');
+const connect = require('../utils/sqlConnect');
+// const sql = require('../utils/sql');
 
 router.get('/', (req, res) => {
-    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+
     console.log('at the main route');
-
-    //let query = "SELECT ID, Name, Publisher, Avatar, Place, AlterEgo, Team FROM tbl_favorite_card";
-
-
-    // sql.query(query, (err, result) => {
-    //     if (err) { throw err; console.log(err); }
-
-    //     // console.log(result); // should see objects wrapped in an array
-
-    //     // render the home view with dynamic data
-    //     res.render('home', { people: result }); //we can change the key but we had to keep the result
-    // })
     res.render('home');
 })
 
-router.get('/users/:id', (req, res) => {
-    // should really get the user data here and then fetch it thru, but let's try this asynchronously
-    console.log('at the main route');
-    console.log(req.params.id); //1 2 3 or whatever comes after the slach
-
-    let query = `select * from tbl_favorite_characters where characterID="${req.params.id}"`;
 
 
-    sql.query(query, (err, result) => {
-        if (err) { throw err; console.log(err); }
+router.get('/1', (req, res) => {
 
-        console.log(result); // should see objects wrapped in an array
-        // convert the social property into an array before you send it thru
-        // render the home view with dynamic data
-        // result[0].social=result[0].social.split(",").map(function(item){
-        //     item = item.trim();
-        //     //item.trim() remove any empty white space from the text
+    // get the connection via the connection pool, and then run the query -> just one added step
+    connect.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
 
-        //     return item;
-        // })
+		let query = `SELECT * FROM portfolio WHERE ID="1"`;
 
-        console.log("after trim/conversion:", result[0]);
-        //remder the home view with dynamic data
-        res.json(result[0]);
+		connect.query(query, (err, rows) => {
+			connection.release(); // send this connection back to the pool  
 
-        // res.render('home', { people: result });
-        //we can change the key but we had to keep the result
-    })
+			if (err) {
+				// will exit the function and log the error
+				return console.log(err.message);
+			}
+
+			console.log(rows); // this should be your database query result
+
+			// render our page
+			res.render('portfolio', {data: rows}); // whatever page and data you're rendering
+		});
+	});
+})
+
+router.get('/2', (req, res) => {
+
+    // get the connection via the connection pool, and then run the query -> just one added step
+    connect.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
+
+		let query = `SELECT * FROM portfolio WHERE ID="2"`;
+
+		connect.query(query, (err, rows) => {
+			connection.release(); // send this connection back to the pool  
+
+			if (err) {
+				// will exit the function and log the error
+				return console.log(err.message);
+			}
+
+			console.log(rows); // this should be your database query result
+
+			// render our page
+			res.render('portfolio', {data: rows}); // whatever page and data you're rendering
+		});
+	});
+})
+
+router.get('/3', (req, res) => {
+
+    // get the connection via the connection pool, and then run the query -> just one added step
+    connect.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
+
+		let query = `SELECT * FROM portfolio WHERE ID="3"`;
+
+		connect.query(query, (err, rows) => {
+			connection.release(); // send this connection back to the pool  
+
+			if (err) {
+				// will exit the function and log the error
+				return console.log(err.message);
+			}
+
+			console.log(rows); // this should be your database query result
+
+			// render our page
+			res.render('portfolio', {data: rows}); // whatever page and data you're rendering
+		});
+	});
+})
+
+router.get('/4', (req, res) => {
+
+    // get the connection via the connection pool, and then run the query -> just one added step
+    connect.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
+
+		let query = `SELECT * FROM portfolio WHERE ID="4"`;
+
+		connect.query(query, (err, rows) => {
+			connection.release(); // send this connection back to the pool  
+
+			if (err) {
+				// will exit the function and log the error
+				return console.log(err.message);
+			}
+
+			console.log(rows); // this should be your database query result
+
+			// render our page
+			res.render('portfolio', {data: rows}); // whatever page and data you're rendering
+		});
+	});
 })
 
 module.exports = router;
 
 
-//type show table => show 2 table;
-// describe tablename
-// Change the data for that table
-//updata table_myadmin
 
