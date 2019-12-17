@@ -8,6 +8,7 @@
         color: $green;
         font-size: 32px;
         margin: 10px 0px 10px 20px;
+        text-align: center;
     }
     .cols {
         display: flex;
@@ -17,6 +18,11 @@
         .rows {
             display: flex;
             flex-direction: column;
+
+            #choose{
+                color: $yellow;
+                font-family: $font;
+            }
         }
         label {
             font-size: 13px;
@@ -71,6 +77,11 @@
             padding-bottom: 10px;
             font-family: $title;
         }
+        #submit:hover {
+            color: $yellow;
+            transition: all 1s ease;
+        }
+
     }
 }
 
@@ -115,8 +126,9 @@
     #contact {
         padding-top: 5%;
         h1 {
-            font-size: 28px;
+            font-size: 30px;
             margin-left: 5%;
+            
         }
         form {
             width: 140%;
