@@ -1,69 +1,161 @@
-
-label{
-    color:$yellow;
-  }
-  
 #contact {
-    margin-top: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    h1{
-        font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    background-color: white;
+    h1 {
         font-family: $title;
         color: $green;
+        font-size: 32px;
+        margin: 10px 0px 10px 20px;
     }
-}
-
-::placeholder {
-    color: $yellow;
-}
-
-#choose{
-    background-color: $green;
-}
-
-#submit {
-    border: none; 
-    margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 0px;
-    color: #ffffff;
-    width: 95%;
-    // margin-left: 30px;
-    // margin-right: 30px;
-    background-color: $yellow;
-    cursor: pointer;
+    .cols {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        .rows {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 13px;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        input {
+            font-size: 13px;
+            box-shadow: none !important;
+            border-top: transparent !important;
+            border-left: transparent !important;
+            border-right: transparent !important;
+            border-bottom: $green solid 2px;
+            -webkit-appearance: none;
+            outline: none;
+            box-shadow: none;
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        select {
+            box-shadow: none !important;
+            border-top: transparent !important;
+            border-left: transparent !important;
+            border-right: transparent !important;
+            border-bottom: $green solid 2px;
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            option {
+                background-color: $green;
+            }
+        }
+        textarea {
+            width: 85%;
+            margin-left: 5%;
+            height: 80px;
+            border: $green 1px solid;
+        }
+        #submit {
+            box-shadow: none !important;
+            border-top: transparent !important;
+            border-left: transparent !important;
+            border-right: transparent !important;
+            border-bottom: transparent !important;
+            width: 88%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: $green;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: $title;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
-
     #contact {
-        margin-top: 40px;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        h1{
-            font-size: 32px;
-            font-family: $title;
-            color: $green;
-            margin-left: 150px;
-            margin-bottom: 40px;
+        flex-direction: row;
+        padding-top: 10%;
+        h1 {
+            margin-top: 15%;
+            width: 35%;
+        }
+        form {
+            width: 120%;
+            .rows {
+                flex-direction: row;
+            }
+            label {
+                font-size: 15px;
+                margin-left: 0%;
+            }
+            input {
+                font-size: 15px;
+                width: 60%;
+            }
+            select {
+                width: 55%;
+            }
+            textarea {
+                width: 90%;
+                margin-left: 0%;
+                height: 80px;
+            }
+            #submit {
+                width: 92%;
+                margin-left: 0%;
+            }
         }
     }
-}    
+}
+
+@media screen and (min-width: 1000px) {
+    #contact {
+        padding-top: 5%;
+        h1 {
+            font-size: 28px;
+            margin-left: 5%;
+        }
+        form {
+            width: 140%;
+            margin-left: 10%;
+            .rows {
+                flex-direction: row;
+            }
+            label {
+                font-size: 18px;
+                margin-left: 0%;
+            }
+            input {
+                font-size: 18px;
+                width: 60%;
+            }
+            select {
+                width: 55%;
+            }
+            textarea {
+                width: 85%;
+                margin-left: 0%;
+                height: 120px;
+            }
+            #submit {
+                width: 86%;
+                margin-left: 0%;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1200px) {
-
     #contact {
-        margin-top: 40px;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        h1{
-            font-size: 40px;
-            font-family: $title;
-            color: $green;
-            margin-left: 250px;
-            margin-bottom: 40px;
+        h1 {
+            font-size: 28px;
+            margin-left: 5%;
+        }
+        form {
+            margin-left: 15%;
         }
     }
-}    
+}

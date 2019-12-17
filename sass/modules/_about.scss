@@ -112,7 +112,7 @@
         font-size: 22px;
         }
         h1{
-          font-size: 28px;
+          font-size: 30px;
           margin-left: 20px;
           padding-bottom: 30px;
           padding-top: 30px;
@@ -203,7 +203,7 @@
   flex-direction: row;
   justify-content: space-between;
   .softSkills, .softwareSkills{
-    width:46%;
+    width:60%;
     h2 {
       font-size: 28px;
       margin-bottom: 10px;
@@ -213,7 +213,7 @@
       flex-direction: row;
       font-size: 16px;
       margin-bottom: 8px;
-      // margin-left: 0px;
+      // margin-left: 20px;
       .container{
         width: 70%;
         height: 10px;

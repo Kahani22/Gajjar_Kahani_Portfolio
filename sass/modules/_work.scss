@@ -1,7 +1,7 @@
 #work{
     h1{
         font-family: $title;
-        font-size:28px;
+        font-size:32px;
     }
     .workContainer{
     display:flex;
@@ -70,9 +70,9 @@
 
       h1{
         font-family: $title;
-        font-size:32px;
-        margin-left: 100px;
-        padding-top: 30px;
+        font-size:35px;
+        margin-left: 200px;
+        padding-top: 50px;
     }
         .workContainer{
         flex-direction: row;
@@ -132,7 +132,7 @@
     #work{
       h1{
         font-family: $title;
-        font-size:40px;
+        font-size:50px;
         margin-left: 200px;
         padding-top: 30px;
     }
