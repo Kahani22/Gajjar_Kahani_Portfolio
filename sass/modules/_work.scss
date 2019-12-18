@@ -60,21 +60,16 @@
     height: 100%;
     backface-visibility: hidden;
   }
-  
-  // .flip-card-front {
-  //   background-color: #bbb;
-  //   color: black;
-  // }
+
   
   
     #work{
 
       h1{
         font-family: $title;
-        font-size:35px;
-        // margin-left: 200px;
-        // padding-top: 50px;
+        font-size:37px;
         text-align: center;
+        margin-top: 50px;
     }
         .workContainer{
         flex-direction: row;
@@ -148,7 +143,7 @@
         margin-right: auto;
         .Left {
           width: 365px;
-          height: 570px;
+          height: 480px;
           margin-bottom: 0px;
           Img{
             position: relative;
