@@ -235,6 +235,26 @@
 }
 }
 
+@media screen and (min-width: 1000px) {
+        #container{
+            #content{ 
+                #titles{
+                #skills {
+                    margin-top: 250px;
+                    h2 {
+                        width: 100px;
+                        font-size: 45px;
+                        padding: 20px 55px 20px 10px;
+                        border-right: $green solid 10px;
+                        border-bottom: $green solid 10px;
+                        margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 @media screen and (min-width: 1200px) {
     #container{
         #content{ 
@@ -343,5 +363,44 @@
 
    
 }
-        
-        
+
+@media screen and (min-width: 1400px) {
+    #container{
+        #content{ 
+            #titles{
+            #skills {
+                margin-top: 330px;
+                h2 {
+                    width: 100px;
+                    font-size: 45px;
+                    padding: 20px 55px 20px 10px;
+                    border-right: $green solid 10px;
+                    border-bottom: $green solid 10px;
+                    margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #container{
+        #content{ 
+            #titles{
+            #skills {
+                margin-top: 360px;
+                h2 {
+                    width: 100px;
+                    font-size: 45px;
+                    padding: 20px 55px 20px 10px;
+                    border-right: $green solid 10px;
+                    border-bottom: $green solid 10px;
+                    margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+ 
